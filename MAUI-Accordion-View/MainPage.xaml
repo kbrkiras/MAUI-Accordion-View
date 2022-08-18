@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Accordion_View.MainPage"
+             xmlns:local="clr-namespace:MAUI_Accordion_View"
+             xmlns:loc="clr-namespace:MAUI_Accordion_View">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <local:Accordion  Title="First Accordion">
+
+                <local:Accordion.AccordionContentView>
+                    <StackLayout>
+                        <Label Text="Here is a simple content"
+                           TextColor="Black"/>
+                        <Label Text="Today is saturday and we are going to code till it gets dark."
+                           TextColor="Gray"/>
+                        <Button Text="Click Here"/>
+                    </StackLayout>
+                </local:Accordion.AccordionContentView>
+
+                <local:Accordion.IndicatorView>
+                    <Label Text="&#xf107;" FontSize="Large"/>
+                </local:Accordion.IndicatorView>
+
+            </local:Accordion>
+            <local:Accordion  Title="Second Accordion">
+
+                <local:Accordion.AccordionContentView>
+                    <StackLayout>
+                        <Label Text="Here is a simple content"
+                           TextColor="Black"/>
+                        <Label Text="Today is saturday and we are going to code till it gets dark."
+                           TextColor="Gray"/>
+                        <Button Text="Click Here"/>
+                    </StackLayout>
+                </local:Accordion.AccordionContentView>
+
+                <local:Accordion.IndicatorView>
+                    <Label Text="&#xf107;" FontSize="Large"/>
+                </local:Accordion.IndicatorView>
+
+            </local:Accordion>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
